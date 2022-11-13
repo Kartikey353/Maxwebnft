@@ -14,7 +14,8 @@ const AccountSetting = () => {
                         <h1 className=" text-orange-500 text-4xl myfont font-bold text-center  before:absolute 
                 before:rounded-lg before:content-around before:w-40 before:h-1 before:top-[132px] before: before:bg-gradient-to-tr from-orange-400 to-orange-600 transition-all ease-in-out duration-100 before:-z-10">Account Details</h1>
                         <div className="w-full md:w-full px-3 mb-6 mt-5">
-                            <img className='flex w-28 mx-auto object-cover rounded-full' src={nft} alt="" />
+                            <img className='flex w-28 mx-auto object-cover rounded-full' src={nft} alt="" /> 
+                            <span className='text-center font-bold text-3xl bg-black block mt-4'>Kartikey</span>
                         </div>
                         <form className="mt-6 pt-4 flex">
                             <div className="flex flex-wrap -mx-3 mb-6">
@@ -135,7 +136,7 @@ const AccountSetting = () => {
                                     </div>
                                     <div className="flex justify-end">
                                         <button
-                                            className="appearance-none bg-orange-500 text-black font-bold text-xl  px-2 py-1 shadow-sm border border-orange-500 rounded-md mr-3"
+                                            className="appearance-none bg-orange-500 text-white font-bold text-xl  px-2 py-1 shadow-sm border border-orange-500 rounded-md mr-3"
                                             type="submit"
                                         >
                                             Save
@@ -146,7 +147,8 @@ const AccountSetting = () => {
                         </form>
                     </div>
                 </div>
-            </div>
+            </div> 
+            <Footer/>
         </>
     )
 }
