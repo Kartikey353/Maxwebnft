@@ -10,6 +10,7 @@ import { loginon, loginoff } from '../Actions';
 import { useDispatch } from 'react-redux';
 const Login = () => {
 
+    const navigate = useNavigate();
     const [email, setemail] = useState('');
     const [password, setpassword] = useState('');
     const dispatch = useDispatch();
@@ -57,7 +58,7 @@ const Login = () => {
         let data = await response.text();
         console.log(data);
         let item = result.user.uid;
-        navigate('/userdashboard/' + item);
+        navigate(`/userdashboard/${item}`);
     }
     const login = (e) => {
         e.preventDefault();
@@ -67,7 +68,6 @@ const Login = () => {
                 sessionStorage.setItem('Auth Token', response._tokenResponse.refreshToken);
             })
     }
-    const navigate = useNavigate();
     useEffect(() => {
         let login = localStorage.getItem('login');
         if (login) {

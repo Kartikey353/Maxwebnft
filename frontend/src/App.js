@@ -23,7 +23,7 @@ function App() {
         <Route path="/community" element={<Community/>}></Route> 
         <Route path="/create" element={<Protected Component={Create}/>}></Route> 
         <Route path="/register" element={<Registration/>}></Route> 
-        <Route path="/userdashboard/:userid" element={<Protected Component={Userdashboard}/>}></Route> 
+        <Route path="/userdashboard/:userid" element={<Userdashboard/>}></Route> 
         <Route path="/Createnewitem129865efd" element={<Protected Component={Createnewitem}/>}></Route> 
         <Route path="/accountsetting" element={<AccountSetting/>}></Route> 
       </Routes>
